@@ -13,6 +13,7 @@ let board = [
 ];
 
 let playerTurn = 'X';
+let secondPlayer = 'O';
 
 function printBoard() {
   console.log('   0  1  2');
@@ -41,7 +42,8 @@ function checkForWin() {
 
 function ticTacToe(row, column) {
   // Your code here
-}
+  board[row][column] = playerTurn;
+ }
 
 function getPrompt() {
   printBoard();
